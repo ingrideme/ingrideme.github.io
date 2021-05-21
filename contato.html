@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+<body>
+    <div class="menu2">
+        <nav role="navigation">
+            <div id="menuToggle">
+           
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+                  <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+     <h1 class="titulo">Contato</h1>
+     <div class="formulario">
+        <h3 class="tituloform">Formulário</h3>
+            <label class="texto" for="txtNome">Nome:</label><br>
+            <input class="input" id="nome" type="text" onkeyup='validaNome()' ><br>
+            <div id='txtNome'></div>
+            <label  class="texto" for="txtEmail">Email:</label><br>
+            <input  class="input" id="email" type="email" onkeyup='validaEmail()'><br>
+            <div id='txtEmail'></div>
+
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="5" onkeyup="validaMensagem()"></textarea>
+            </textarea>
+            <div id='txtMensagem'></div>
+
+            <button class="btn-grad">Enviar!</button>  
+
+        </form>  
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
